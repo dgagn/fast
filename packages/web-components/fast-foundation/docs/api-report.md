@@ -2637,6 +2637,8 @@ export class VirtualizingStack extends FoundationElement {
     bottomSpacerHeight: number;
     // @internal (undocumented)
     connectedCallback(): void;
+    // @internal
+    container: HTMLDivElement;
     // @internal (undocumented)
     disconnectedCallback(): void;
     // (undocumented)
