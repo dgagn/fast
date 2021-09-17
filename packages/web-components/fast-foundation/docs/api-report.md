@@ -2655,6 +2655,8 @@ export class VirtualizingStack extends FoundationElement {
     itemStackHeight: number;
     // (undocumented)
     itemTemplate: ViewTemplate;
+    // @beta (undocumented)
+    layoutUpdateDelay: number;
     // @internal (undocumented)
     topSpacerHeight: number;
     // @internal (undocumented)
@@ -2662,6 +2664,8 @@ export class VirtualizingStack extends FoundationElement {
     update(): void;
     // @beta
     viewport: string;
+    // @beta (undocumented)
+    viewportBuffer: number;
     // @beta
     viewportElement: HTMLElement;
     // @internal (undocumented)
