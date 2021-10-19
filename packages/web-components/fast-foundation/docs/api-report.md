@@ -605,6 +605,8 @@ export const darkModeStylesheetBehavior: (styles: ElementStyles) => MatchMediaSt
 // @public
 export class DataGrid extends VirtualizingStackBase {
     constructor();
+    // @internal (undocumented)
+    authoredRowCount: number;
     cellItemTemplate?: ViewTemplate;
     columnDefinitions: ColumnDefinition[] | null;
     // @internal (undocumented)
@@ -2657,6 +2659,11 @@ export class VirtualizingStackBase extends FoundationElement {
     // @internal (undocumented)
     endSpacerSpan: number;
     // @internal (undocumented)
+    firstRenderedIndex: number;
+    // (undocumented)
+    getI: any;
+    getItemPosition(itemIndex: number): number;
+    // @internal (undocumented)
     gridTemplateSpans: string;
     // (undocumented)
     items: object[];
@@ -2664,6 +2671,8 @@ export class VirtualizingStackBase extends FoundationElement {
     itemSpan: number;
     // (undocumented)
     itemTemplate: ViewTemplate;
+    // @internal (undocumented)
+    lastRenderedIndex: number;
     // @beta (undocumented)
     layoutUpdateDelay: number;
     // @beta (undocumented)
