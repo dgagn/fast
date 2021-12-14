@@ -2648,6 +2648,8 @@ export type VirtualizingStackAutoUpdateMode = "manual" | "viewport-resize" | "au
 
 // @public (undocumented)
 export class VirtualizingStackBase extends FoundationElement {
+    // (undocumented)
+    protected allowLayoutUpdateDelay: boolean;
     // @beta
     autoUpdateMode: VirtualizingStackAutoUpdateMode;
     // @internal (undocumented)
@@ -2680,7 +2682,6 @@ export class VirtualizingStackBase extends FoundationElement {
     // @beta (undocumented)
     orientation: Orientation;
     requestPositionUpdates: () => void;
-    // (undocumented)
     protected reset(): void;
     // (undocumented)
     spanMap: number[];
