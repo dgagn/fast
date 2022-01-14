@@ -604,7 +604,7 @@ export type CSSDisplayPropertyValue = "block" | "contents" | "flex" | "grid" | "
 export const darkModeStylesheetBehavior: (styles: ElementStyles) => MatchMediaStyleSheetBehavior;
 
 // @public
-export class DataGrid extends VirtualizingStack {
+export class DataGrid extends VirtualList {
     constructor();
     // @internal (undocumented)
     authoredRowCount: number;
@@ -640,7 +640,7 @@ export class DataGrid extends VirtualizingStack {
     rowItemTemplate: ViewTemplate;
     rowsData: object[];
     // @internal (undocumented)
-    stack: VirtualizingStack;
+    stack: VirtualList;
     }
 
 // @public
@@ -2640,11 +2640,11 @@ export function validateKey(key: any): void;
 export type VerticalPosition = "top" | "bottom" | "center" | "unset";
 
 // @public
-export class VirtualizingStack extends FoundationElement {
+export class VirtualList extends FoundationElement {
     // (undocumented)
     protected allowLayoutUpdateDelay: boolean;
     // @beta
-    autoUpdateMode: VirtualizingStackAutoUpdateMode;
+    autoUpdateMode: VirtualListAutoUpdateMode;
     // @internal (undocumented)
     connectedCallback(): void;
     // @internal
@@ -2697,10 +2697,10 @@ export class VirtualizingStack extends FoundationElement {
     }
 
 // @beta
-export type VirtualizingStackAutoUpdateMode = "manual" | "viewport-resize" | "auto";
+export type VirtualListAutoUpdateMode = "manual" | "viewport-resize" | "auto";
 
 // @public
-export const virtualizingStackTemplate: (context: ElementDefinitionContext, definition: FoundationElementDefinition) => ViewTemplate<VirtualizingStack>;
+export const virtualListTemplate: (context: ElementDefinitionContext, definition: FoundationElementDefinition) => ViewTemplate<VirtualList>;
 
 // @public
 export type WeekdayFormat = "long" | "narrow" | "short";
